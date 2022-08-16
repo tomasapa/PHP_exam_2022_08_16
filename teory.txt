@@ -1,0 +1,134 @@
+1.	Parašykite 1 būdą, kaip įvykdyti (paleisti) PHP script'ą iš komandinės eilutės.
+
+pvz.: faile parašome: echo "Hello World!";
+terminale suveati: php -f .\failo pavadinimas, kuriame yra parašytas norimas pamatyti kodas;
+
+2.	Kas privalo būti PHP failo pirmoje eilurėje, kad PHP žinotų, jog tolesnės eilutės yra PHP kodas?
+
+ atsakymas: <?php
+
+3.	Kokiais simboliais gali prasidėti PHP kintamojo pavadinimas (po $)?
+
+atsakymas; mažosiomis raidėmis;
+
+4.	Ar simbolis % gali būti naudojamas PHP kintamojo pavadinime?
+
+arsakymas: ne;
+
+5.	Parašykite multiline PHP komentaro pavyzdį.
+
+atsakymas:
+
+/*
+ilgas ilgas didelis (miltiline)
+komentaras :);
+*/
+
+6.	Parašykite bent 4 duomenų tipus, naudojamus PHp kalboje.
+
+atsakymas: int, boolean, string, array, float;
+
+7.	Paminėkite pagrindinė enumeratyvaus masyvo (indexed array) požymį, kuriuo jis skiriasi nuo asociatyvaus masyvo.
+
+atsakymas: nėra nurodomi reikšmių raktai;
+
+8.	Turite kintamajį $someVariable = '15'. Pakeiskite jo tipą į 'int'.
+
+atsakymas: var_dump((int) $someVariable) arba echo intval($someVariable);
+
+9.	Kokia funkcija naudojama gauti masyvo narių skaičiui?
+
+atsakymas: count($array);
+
+10.	Kas nutinka, kai badome sukurti masyvą, kuris turi kelis narius, kurių raktai (keys) sutampa?
+
+atsakymas: sukurtame masyve išlieka, tik paskutinis (vienintelis iš sukurtų) elementas turintis tokį patį raktą, t.y.:
+
+$d = [];
+$d = ['products'=> 'a', 'products' => 'b'];
+
+resultate $d = ['products' => 'b'];
+
+11.	Parašykite multidimensinio masyvo pavyzdį.
+
+atsakymas:
+$valgomaNevalgoma = [
+    ['vaisius' => 'kriaušė',
+        'spalva' =>
+            ['žalia', 'raudona']
+        ],
+    ['uoga' => 'agrastas',
+        'spalva' => "žalia"
+    ],
+    ['baldas'=> 'kėdė',
+    'medižaga' => 'mediena'
+]
+];
+
+12.	Parašykite enumeryvaus masyvo pavyzdį.
+
+atsaymas:
+$array = [2, 3, "4", 'chair'];
+
+13.	Koks operatorius yra naudojamas pridėti naują narį masyvui? Pateikite paprastą pavyzdį.
+
+atsakymas:
+array_push() arba tiesiog $array []= "naujas elementas";
+pvz.:
+$array = [1 , 2];
+array_push($array, 'Martynas');
+$array[] = 'Vytautas';
+
+var_dump($array); // array(4) {
+                       [0]=>
+                       int(1)
+                       [1]=>
+                       int(2)
+                       [2]=>
+                       string(8) "Martynas"
+                       [3]=>
+                       string(8) "Vytautas"
+                     }
+
+14.	Kokia funkcija naudojama panaikinti masyvo nariui?
+
+atsakymas:
+unset();
+
+15.	Kokia funkcija naudotumėte pašalinti nereikalingus simbolius nuo string tipo reikšmės pradžios ir pabaigos
+(pvz:. "-test-" -> "test")?
+
+atsakymas:
+str_replace();
+pvz>:
+var_dump(str_replace('-', '',"-test-"));
+
+16.	Kas laikoma superglobaliame kintamajame $_POST?
+
+atsakymas:
+formos (html <form>) duomenys, kurios laikomos masyvo forma;
+
+17.	Kas laikoma superglobaliame kintamajame $_FILES?
+
+atsakymas:
+$-FILES kintram1jame laikomi - failai;
+
+18.	Git status komanda leidžia padaryti ką?
+
+atsakymas:
+git status komanda parodo pakeistus failus, besiskiriančius nuo patalpintų GitHub'e;
+
+19.	Git push komanda leidžia padaryti ką?
+
+atsakymas:
+git push komanda leidžia patalpinti sukurtus, pakeistus failus iš lokalios saugyklos į nutolusią (GitHub);
+
+20.	Kas yra regex?
+
+atsakymas:
+tai sudėlioti tam tikri modeliai skirti išskaidyti string'ą į dalis ir juos pakeisti, surasti atitinkamą string'o dalį.
+
+Ačiū
+
+
+

@@ -1,0 +1,32 @@
+[
+    {
+        "tema": "html\/css",
+        "valand\u0173_skai\u010dius": 100,
+        "statusas": "u\u017ebaigta"
+    },
+    {
+        "tema": "js",
+        "valand\u0173_skai\u010dius": 140,
+        "statusas": "u\u017ebaigta"
+    },
+    {
+        "tema": "js",
+        "valand\u0173_skai\u010dius": 140,
+        "statusas": "u\u017ebaigta"
+    },
+    {
+        "tema": "php",
+        "valand\u0173_skai\u010dius": 120,
+        "statusas": "vyksta"
+    },
+    {
+        "tema": "laravel_karkasa",
+        "valand\u0173_skai\u010dius": 100,
+        "statusas": "laukiama"
+    },
+    {
+        "tema": "baigiamasis_projektas",
+        "valand\u0173_skai\u010dius": 20,
+        "statusas": "laukiama"
+    }
+]
